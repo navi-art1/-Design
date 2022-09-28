@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tabla</title>
+
+    <style>
+
+    body{
+        margin: 0;
+    }
+
+
+    :root{
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd982; 
+        --yellow:#e48924;
+        --darkblue: #11143d;
+        --sm:14px;
+        --md:16px;
+        --lg:18px;
+    }
+
+    .container-table{
+        font-family: sans-serif;
+        background-color: #11143d;
+        border-radius: 4px;
+        color: var(--white);
+        margin: 0 auto;
+        width: 500px;
+        font-size: 12px;
+    }
+
+
+    .header-table{
+        border-bottom: solid 1px var(--yellow);
+        padding: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search{
+        width: 30%;
+    }
+    .search-input{
+        width: 100%;
+        background-color: var(--text-input-field);
+        display: block;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: solid 1px var(--yellow);
+        color: #acd982;
+    }
+
+
+    .tools{
+        width: 70%;
+    }
+
+
+    .tools ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+
+    .tools ul li{
+        display: inline-block;
+        margin: 0 4px;
+        align-items: baseline;
+    }
+
+
+    .tools ul li button{
+        color: var(--white);
+        width: 100%;
+        box-sizing: border-box;
+        border: 0;
+        border-radius: 8px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+
+    .tools ul li button:hover{
+        background-color: var(--yellow);
+    }
+
+    .datatable{
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+
+    .datatable th, .datatable td{
+        padding: 8px;
+    }
+
+    .datatable th{
+        font-weight: bolder;
+        text-align: left;
+        border-bottom: solid 1px var(--yellow);
+    }
+
+    .datatable td{
+        border-bottom: solid 0.5px var(--text-input-field) ;
+    }
+    
+
+    .datatable tbody tr:nth-child(even){
+        background-color:#18192e;
+    }
+
+    .datatable tbody tr:hover{
+        background-color: rgb(136,83,54);
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container-table">
+        <div class="header-table">
+            <div class="tools">
+                <ul>
+                    <li> <span> <input type="checkbox"> </span> </li>
+                    <li>
+                        <button>
+                            <i class="material-icons"> add_circle</i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button>
+                            <i class="material-icons"> edit</i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button>
+                            <i class="material-icons"> delete</i>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button>
+                            <i class="material-icons"> share</i>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="search">
+                <input type="text" id="" class="search-input">
+            </div>
+        </div>
+
+        <table class="datatable">
+            <thead>
+                <tr>
+                    <th>Nombre de Sensor</th>
+                    <th>Medida</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>temperatura </td>
+                    <td>°C</td>
+                    <td class="table-checkbox"> <input type="checkbox"></td>
+                    
+                </tr>
+                <tr>
+                    <td>temperatura </td>
+                    <td>°C</td>
+                    <td class="table-checkbox"> <input type="checkbox"></td>
+                    
+                </tr>
+                <tr>
+                    <td>temperatura </td>
+                    <td>°C</td>
+                    <td class="table-checkbox"> <input type="checkbox"></td>
+                    
+                </tr>
+                <tr>
+                    <td>temperatura </td>
+                    <td>°C</td>
+                    <td class="table-checkbox"> <input type="checkbox"></td>
+                    
+                </tr>
+                <tr>
+                    <td>temperatura </td>
+                    <td>°C</td>
+                    <td class="table-checkbox"> <input type="checkbox"></td>
+                    
+                </tr>
+
+                
+
+
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listadeconductores</title>
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd982; 
+            --yellow:#e48924;
+            --darkblue: #11143d;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+            padding: 1.5rem;
+            max-height: 100vh;
+        }
+
+
+        .registrarCamion{
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .form-container{
+            width: 100%;
+            max-width: 750px;
+            display: grid;
+            grid-template-rows: auto 1fr auto  auto;
+            
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+
+        .RegistroCamion{
+            column-count: 2;
+            column-gap: 1.5rem;
+        }
+
+
+
+        @media screen and (max-width:520px){
+            .RegistroCamion{
+                column-count: 1;
+                column-gap: 0;
+            }
+
+            .CuentaEmpresa{
+                column-count: 1;
+                column-gap: 0;
+            }
+        }
+
+
+        .logo{
+            height: 120px;
+            margin-top: auto;
+            margin-bottom: auto;
+            justify-self: center;
+            border-radius: 16px;
+            
+        }
+        .title{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .subtitle{
+            color:var(--darkblue);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        .label{
+            font-size: var(--md);
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            height: 30px;
+            font-size: var(--sm);
+            padding: 8px;
+        }
+
+        .containerBoton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botonRegistrarCamion{
+            margin-top: 2rem;
+            margin-bottom: 36px;
+            height: 50px;
+            width: 150px;
+            background-color:var(--darkblue);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.4s;
+        } 
+        
+        .botonAtras:active{
+            background-color: var(--yellow);
+            color: var(--darkblue);
+        }
+        
+        .botonAtras{
+            margin-top: 2rem;
+            margin-bottom: 36px;
+            height: 50px;
+            width: 150px;
+            background-color:var(--darkblue);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.4s;
+        }
+
+
+
+
+        .botonRegistrarCamion:active{
+            background-color: var(--yellow);
+            color: var(--darkblue);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="registrarCamion">
+        <div class="form-container">
+            <img src="/Logo.jpeg" alt="logo" class="logo">
+
+            <div class="containerTitle">
+                <h1 class="title">Registrar Camión</h1>
+            </div>
+            
+            <form  action ="/" class="Registros">   
+                <p class="subtitle">Datos del Camión</p>
+                <div class="RegistroCamion">
+                    <div class="form">
+
+                        <label for="id2" class="label">ID2</label>
+                        <input type="text" id="id2" placeholder="ingrese un id" class="input">
+
+                        <label for="codigo"  class="label" >Código</label>
+                        <input type="text" id="codigo" placeholder="Ingrese Código" class="input">
+
+                        <label for="placa" class="label">Placa</label>
+                        <input type="text" id="placa" placeholder="Ingrese su Placa" class="input">
+
+                        <label for="marca"  class="label">Marca</label>
+                        <input type="text" id=" marca" placeholder="Ingrese Marca" class="input">
+
+                        <label for="modelo" class="label">Modelo</label>
+                        <input type="text" id="modelo" placeholder="ingrese Modelo" class="input">
+                
+                        <label for="descripcion" class="label">Descripcion</label>
+                        <input type="text" id="descripcion" placeholder="Descripcion" class="input">
+
+                        <label for="fechainicio" class="label">Fecha inicio</label>
+                        <input type="date" id="fechainicio" placeholder="dd/mm/aaaa" class="input">
+
+                        <label for="fechafin" class="label">Fecha Final</label>
+                        <input type="date" id="fechafin" placeholder="dd/mm/aaaa" class="input">
+
+                        <label for="ano" class="label">Año</label>
+                        <input type="number" id="ano" placeholder="ingrese año" class="input">
+
+                        <label for="id_empresasclientes" class="label">ID Empresa</label>
+                        <input type="email" id="id_empresasclientes" placeholder="abc@gmail.com" class="input">
+
+                    </div>
+
+                </div>
+
+                <div class="containerBoton">
+                    <input type="button" class="botonAtras" value="Atras">
+                    <input type="button" class="botonRegistrarCamion" value="Registrar">
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

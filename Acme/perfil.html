@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ffc9e3cecc.js" crossorigin="anonymous"></script>
+    <title>perfil</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd982; 
+            --yellow:#e48924;
+            --darkblue: #11143d;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+            
+        }
+
+        .background{
+            background-color: aqua;
+            height: 150px;
+            position: relative;
+
+        }
+        .background1{
+            height: 100%;
+            width: 100%;
+        }
+        .foto{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #e48924;
+            position: absolute;
+            left:0px;
+            right:0px;
+            bottom: -75px;
+            margin:auto;
+        }
+
+        .contenido{
+            height: 250px;
+            padding-top: 25px;
+            background-color: var(--text-input-field);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+
+        }
+        .contenedor-titulo{
+            display:flex ;
+            justify-content: center;
+        }
+        .informacion{
+            display:flex ;
+            justify-content: center;
+            
+        }
+
+        .informacion div{
+            margin: 0 16px;
+            color: var(--darkblue);
+
+        }
+
+        .datos{
+            display: flex;
+            justify-content: center;
+            margin-top:28px;
+        }
+
+        .datos div{
+            border: solid 1px var(--darkblue);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 30px;
+            padding: 12px;
+            
+        }
+        .datos div span{
+            text-align: center;
+        }
+
+        .datos div span:nth-child(1){
+            color: var(--darkblue);
+            font-size: 20px;
+        }
+
+        .datos div span:nth-child(2){
+            color: var(--yellow);
+            font-size: 20px;
+        }
+
+        .contenedor-segundo{
+            display: flex;
+            gap:40px;
+            justify-content: center;
+
+        }
+
+        .columna-primera{
+            width: 72.5%;
+            height: 400px;
+            background: #e48924;
+            border: solid 1px var(--darkblue);
+            padding: 25px;
+            display:flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .resumen{
+            height: 180px;
+            background-color: #11143d;
+            color: var(--white);
+        }
+
+        .teams{
+            height: 180px;
+            background-color: aqua;
+        }
+
+
+
+        .segunda-columna{
+            width: 22.5%;
+            height: 400px;
+            background: #e48924;
+            padding: 25px;
+            border: solid 1px var(--darkblue);
+            display: flex;
+        }
+
+        .contactos{
+            height: 100%;
+            width: 100%;
+            background-color: var(--darkblue);
+            color: #FFFFFF;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="perfil">
+        <div class="contenedor-primero">
+            <div class="background">
+                
+                <img src="/fondo.jpg" class="background1" alt="">
+                <img src="/perfil.png" class="foto" alt="">
+            </div>
+
+
+            <div class="contenido">
+                <div  class="contenedor-titulo">
+                    <h3> Nombre Apellido </h6>
+                </div>
+
+                <div class="informacion">
+                    <div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                    
+
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Lima</span>
+                        </div>
+    
+                    </div>
+
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>25 setiembre</span>
+                        </div>
+    
+                    </div>
+                    
+    
+                </div>
+
+                <div class="datos">
+
+                    <div>
+                        <span>Proyectos</span>
+                        <span>4</span>
+                    </div>
+
+                    <div>
+                        <span>Tasa de exito</span>
+                        <span>60</span>
+                    </div>
+
+                    <div>
+                        <span>25 setiembre</span>
+                        <span>20</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="contenedor-segundo">
+            <div class="columna-primera">
+                <div class="resumen">
+                    <h3>Resumen</h3>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatum, totam nesciunt ipsa debitis nemo quaerat sint assumenda quia repellat architecto quae vero eligendi consequatur impedit explicabo pariatur eveniet rerum?</span>
+                </div>
+
+                <div class="teams">
+                    <h3>Equipo</h3>
+                    <ul>
+                        <li>Team1</li>
+                        <li>Team1</li>
+                        <li>Team1</li>
+                        <li>Team1</li>
+                        <li>Team1</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="segunda-columna">
+                <div class="contactos">
+                    <h3>Equipo</h3>
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Grupo 1</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Grupo 1</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Grupo 1</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Grupo 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
